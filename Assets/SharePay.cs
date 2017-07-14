@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class SharePay : MonoBehaviour {
 
-    AndroidJavaObject sharePay;
+    AndroidJavaClass sharePay;
     public string appid;
 
     // Use this for initialization
     void Start () {
-        sharePay = new AndroidJavaObject("com.wotou.SharePay.WeChatShare");
-        sharePay.Call("initappid", transform.name, appid, 1);
+        sharePay = new AndroidJavaClass("com.wotou.SharePay.WeChatShare");
+        //sharePay.Call("initappid", transform.name, appid, 1);
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
