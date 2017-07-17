@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePayUnity3d.Plugins", "SharePayUnity3d.Plugins.csproj", "{BEC6DCFB-1B50-82BF-324F-B13506617E30}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePayUnity3d", "SharePayUnity3d.csproj", "{93206BB8-BC3C-0A23-67E5-680F7C80CAAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePayUnity3d.Editor", "SharePayUnity3d.Editor.csproj", "{58F3D2B5-B54A-7558-4A04-10DF2A406D47}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharePayUnity3d.Editor.Plugins", "SharePayUnity3d.Editor.Plugins.csproj", "{2B616EA0-0A70-03A2-7D63-4EE9C8968191}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BEC6DCFB-1B50-82BF-324F-B13506617E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BEC6DCFB-1B50-82BF-324F-B13506617E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BEC6DCFB-1B50-82BF-324F-B13506617E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BEC6DCFB-1B50-82BF-324F-B13506617E30}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93206BB8-BC3C-0A23-67E5-680F7C80CAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93206BB8-BC3C-0A23-67E5-680F7C80CAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93206BB8-BC3C-0A23-67E5-680F7C80CAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,10 +19,6 @@ Global
 		{58F3D2B5-B54A-7558-4A04-10DF2A406D47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58F3D2B5-B54A-7558-4A04-10DF2A406D47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58F3D2B5-B54A-7558-4A04-10DF2A406D47}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B616EA0-0A70-03A2-7D63-4EE9C8968191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B616EA0-0A70-03A2-7D63-4EE9C8968191}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B616EA0-0A70-03A2-7D63-4EE9C8968191}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B616EA0-0A70-03A2-7D63-4EE9C8968191}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

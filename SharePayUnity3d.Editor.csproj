@@ -127,47 +127,15 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="SharePayUnity3d.Plugins.csproj">
-      <Project>{BEC6DCFB-1B50-82BF-324F-B13506617E30}</Project>
-      <Name>SharePayUnity3d.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="SharePayUnity3d.csproj">
       <Project>{93206BB8-BC3C-0A23-67E5-680F7C80CAAD}</Project>
       <Name>SharePayUnity3d</Name>
     </ProjectReference>
-    <ProjectReference Include="SharePayUnity3d.Editor.Plugins.csproj">
-      <Project>{2B616EA0-0A70-03A2-7D63-4EE9C8968191}</Project>
-      <Name>SharePayUnity3d.Editor.Plugins</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\ManagePlatforms\ChosenPlatforms.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\ManagePlatforms\EditorUI.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\ShareSDKPostProcessBuild.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXBuildFile.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXBuildPhase.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXDictionary.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXFileReference.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXGroup.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXList.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXObject.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXParser.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\PBXProject.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\XCBuildConfiguration.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\XCConfigurationList.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\XCFileOperationQueue.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\XCMod.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\XCodeEditorMenu.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\XCProject.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\XCSourceFile.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\XCTarget.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCodeEditor\ZipHelper.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\Editor\SDKPorter\XCPlist.cs" />
+    <Compile Include="Assets\Unity-Logs-Viewer\Reporter\Editor\ReporterEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\Android\SharePay\AndroidManifest.xml" />
@@ -179,15 +147,7 @@
     <None Include="Assets\Plugins\Android\SharePay\res\values\dimens.xml" />
     <None Include="Assets\Plugins\Android\SharePay\res\values\strings.xml" />
     <None Include="Assets\Plugins\Android\SharePay\res\values\styles.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_platform_cell_back.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_progressbar.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_oks_strings.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_strings.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_instapaper_strings.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_color_drawables.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_strings.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_strings.xml" />
+    <None Include="Assets\StreamingAssets\build_info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

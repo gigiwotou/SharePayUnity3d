@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class SharePay : MonoBehaviour {
 
-    AndroidJavaClass sharePay;
+    AndroidJavaObject sharePay;
     public string appid;
 
     // Use this for initialization
     void Start () {
-        sharePay = new AndroidJavaClass("com.wotou.SharePay.WeChatShare");
-        //sharePay.Call("initappid", transform.name, appid, 1);
+        //sharePay = new AndroidJavaClass("com.wotou.SharePay.WeChatShare");
+        
+        AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+        sharePay = jc.GetStatic<AndroidJavaObject>("currentActivity");
+        sharePay.Call<string>("initappid", transform.name, appid, 1);
 
     }
 
@@ -22,5 +25,10 @@ public class SharePay : MonoBehaviour {
     public void ShareWX()
     {
         sharePay.Call("shareToWeChat", "微信分享", "www.163.com", "蛇王争霸");
+    }
+
+    public void SayHello()
+    {
+        sharePay.Call("SayHello", "Android hello");
     }
 }

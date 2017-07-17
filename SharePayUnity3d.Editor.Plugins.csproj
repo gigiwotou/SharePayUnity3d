@@ -145,24 +145,16 @@
     <Compile Include="Assets\Plugins\ShareSDK\Editor\ShareSDKConfigEditor.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Plugins\Android\SharePay\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\SharePay\res\layout\activity_main.xml" />
-    <None Include="Assets\Plugins\Android\SharePay\res\menu\main.xml" />
-    <None Include="Assets\Plugins\Android\SharePay\res\values-v11\styles.xml" />
-    <None Include="Assets\Plugins\Android\SharePay\res\values-v14\styles.xml" />
-    <None Include="Assets\Plugins\Android\SharePay\res\values-w820dp\dimens.xml" />
-    <None Include="Assets\Plugins\Android\SharePay\res\values\dimens.xml" />
-    <None Include="Assets\Plugins\Android\SharePay\res\values\strings.xml" />
-    <None Include="Assets\Plugins\Android\SharePay\res\values\styles.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_platform_cell_back.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\drawable\ssdk_oks_classic_progressbar.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_oks_strings.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values-en\ssdk_strings.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_instapaper_strings.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_color_drawables.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_oks_strings.xml" />
-    <None Include="Assets\Plugins\Android\ShareSDK\res\values\ssdk_strings.xml" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\res\layout\activity_main.xml" />
+    <None Include="Assets\Plugins\Android\res\menu\main.xml" />
+    <None Include="Assets\Plugins\Android\res\values-v11\styles.xml" />
+    <None Include="Assets\Plugins\Android\res\values-v14\styles.xml" />
+    <None Include="Assets\Plugins\Android\res\values-w820dp\dimens.xml" />
+    <None Include="Assets\Plugins\Android\res\values\dimens.xml" />
+    <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+    <None Include="Assets\Plugins\Android\res\values\styles.xml" />
+    <None Include="Assets\StreamingAssets\build_info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
