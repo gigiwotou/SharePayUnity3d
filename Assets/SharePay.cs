@@ -31,4 +31,14 @@ public class SharePay : MonoBehaviour {
     {
         sharePay.Call("SayHello", "Android hello");
     }
+
+    public void SendAppToWX()
+    {
+        sharePay.Call("SendAppToWX", "东北麻将", "自摸，杠花，四核");
+    }
+
+    public void SendTextToWX()
+    {
+        sharePay.Call("SendTextToWX", "东北麻将");
+    }
 }
