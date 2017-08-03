@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/UITween/ExampleAnimation.unity
+- path: Assets/SharePayDemo.unity
   isLoaded: 1
   isActive: 1

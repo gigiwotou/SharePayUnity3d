@@ -84,7 +84,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AndroidImpl.cs" />
+    <Compile Include="Assets\IOSImpl.cs" />
+    <Compile Include="Assets\MiniJSON.cs" />
+    <Compile Include="Assets\SendContent.cs" />
     <Compile Include="Assets\SharePay.cs" />
+    <Compile Include="Assets\SharePayImpl.cs" />
     <Compile Include="Assets\UITween\Prefabs\Click Effect Pref\ClickedWaveAnimation.cs" />
     <Compile Include="Assets\UITween\ScenesExamplesScripts\ActivateOnEnable.cs" />
     <Compile Include="Assets\UITween\ScenesExamplesScripts\CreateAnimImage.cs" />
