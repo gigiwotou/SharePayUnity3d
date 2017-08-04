@@ -21,6 +21,12 @@ namespace cn.sharepay.unity3d
             SendParams["text"] = text;
         }
 
+        /*iOS/Android*/
+        public void SetUrl(String url)
+        {
+            SendParams["url"] = url;
+        }
+
         public String GetShareParamsStr()
         {
             String jsonStr = MiniJSON.jsonEncode(SendParams);

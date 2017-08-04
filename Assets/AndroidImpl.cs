@@ -31,6 +31,16 @@ namespace cn.sharepay.unity3d
             sharePay.Call<string>("initappid", _callbackObjectName, appid, 1);
             _appID = appid;
         }
+
+        public override void SendAppToWXSceneSession(string title, string describe)
+        {
+            
+        }
+
+        public override void SendURLToWXSceneSession(string url, string title, string describe)
+        {
+            
+        }
     }
 #endif
 }

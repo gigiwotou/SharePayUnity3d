@@ -149,6 +149,7 @@
     <None Include="Assets\Plugins\Android\res\values\dimens.xml" />
     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
     <None Include="Assets\Plugins\Android\res\values\styles.xml" />
+    <None Include="Assets\Plugins\IOS\OpenSDK\README.txt" />
     <None Include="Assets\StreamingAssets\build_info.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
