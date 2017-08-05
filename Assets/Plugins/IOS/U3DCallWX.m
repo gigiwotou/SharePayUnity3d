@@ -8,9 +8,9 @@
 
 #import "U3DCallWX.h"
 #import "WXApiManager.h"
-#import "SendMsgToWeChatViewController.h"
 #import "WXApiRequestHandler.h"
 #import "Constant.h"
+
 
 @implementation U3DCallWX
 void registerApp(char *appid)
@@ -24,15 +24,32 @@ void registerApp(char *appid)
     
     [WXApi registerAppSupportContentFlag:typeFlag];
 }
-void sendLinkContent()
+void sendURLToSS(NSString *url, NSString *title, NSString *describe)
 {
-    /*SendMsgToWeChatViewController *viewController = [[SendMsgToWeChatViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil];
-    [viewController sendLinkContent];*/
-    UIImage *thumbImage = [UIImage imageNamed:@"res2.png"];
-    [WXApiRequestHandler sendLinkURL:kLinkURL
-                             TagName:kLinkTagName
-                               Title:kLinkTitle
-                         Description:kLinkDescription
+    UIImage *thumbImage = [UIImage imageNamed:@"152x152.png"];
+    [WXApiRequestHandler sendLinkURL:url
+                             TagName:@"ShareToWX"
+                               Title:title
+                         Description:describe
                           ThumbImage:thumbImage
                              InScene:WXSceneSession];}
+void sendAppToSS(NSString *title, NSString *describe)
+{
+    Byte* pBuffer = (Byte *)malloc(BUFFER_SIZE);
+    memset(pBuffer, 0, BUFFER_SIZE);
+    NSData* data = [NSData dataWithBytes:pBuffer length:BUFFER_SIZE];
+    free(pBuffer);
+
+    UIImage *thumbImage = [UIImage imageNamed:@"152x152.png"];
+    [WXApiRequestHandler sendAppContentData:data
+                                ExtInfo:kAppContentExInfo
+                                 ExtURL:kAppContnetExURL
+                                  Title:title
+                            Description:describe
+                             MessageExt:kAppMessageExt
+                          MessageAction:kAppMessageAction
+                             ThumbImage:thumbImage
+                                InScene:WXSceneSession];}
+
+
 @end
