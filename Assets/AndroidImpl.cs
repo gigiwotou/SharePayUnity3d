@@ -39,7 +39,7 @@ namespace cn.sharepay.unity3d
 
         public override void SendURLToWXSceneSession(string url, string title, string describe)
         {
-            
+            sharePay.Call("shareToWeChat", title, url, describe);
         }
     }
 #endif

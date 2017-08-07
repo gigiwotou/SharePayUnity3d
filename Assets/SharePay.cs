@@ -1,19 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using cn.sharepay.unity3d;
 using UnityEngine;
 
 public class SharePay : MonoBehaviour {
 
-    AndroidJavaObject sharePay;
+    public SharePayImpl shareSDKUtils;
     public string appid;
 
+    private void Awake()
+    {
+#if UNITY_ANDROID
+        shareSDKUtils = new AndroidImpl(gameObject);
+        shareSDKUtils.InitApp(appid);
+#elif UNITY_IPHONE
+		shareSDKUtils = new IOSImpl(gameObject);
+        shareSDKUtils.InitApp(appid);
+#endif
+    }
     // Use this for initialization
     void Start () {
-        //sharePay = new AndroidJavaClass("com.wotou.SharePay.WeChatShare");
-        
-        AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-        sharePay = jc.GetStatic<AndroidJavaObject>("currentActivity");
-        sharePay.Call<string>("initappid", transform.name, appid, 1);
 
     }
 
@@ -24,21 +30,7 @@ public class SharePay : MonoBehaviour {
 
     public void ShareWX()
     {
-        sharePay.Call("shareToWeChat", "微信分享", "www.163.com", "蛇王争霸");
+        shareSDKUtils.SendURLToWXSceneSession("sohu.com", "ym分享测试", "这是来着地狱的呼唤。");
     }
 
-    public void SayHello()
-    {
-        sharePay.Call("SayHello", "Android hello");
-    }
-
-    public void SendAppToWX()
-    {
-        sharePay.Call("SendAppToWX", "东北麻将", "自摸，杠花，四核");
-    }
-
-    public void SendTextToWX()
-    {
-        sharePay.Call("SendTextToWX", "东北麻将");
-    }
 }
