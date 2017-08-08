@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace cn.sharepay.unity3d
 {
-    #if UNITY_IOS
+#if UNITY_IOS
     public class IOSImpl : SharePayImpl
     {
         private string _callbackObjectName = "Main Camera";
@@ -31,7 +31,8 @@ namespace cn.sharepay.unity3d
 
         public override void InitApp(string appid)
         {
-            _appID = appid;            
+            _appID = appid;
+            registerApp(appid);
         }
 
         public override void SendAppToWXSceneSession(string title, string describe)

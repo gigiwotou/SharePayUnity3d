@@ -2,7 +2,7 @@
 //  U3DCallWX.h
 //  SDKSample
 //
-//  Created by ghostheart on 17/8/1.
+//  Created by yinming on 17/8/1.
 //
 //
 
