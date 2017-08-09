@@ -1,10 +1,4 @@
-//
-//  WXMediaMessage+messageConstruct.h
-//  SDKSample
-//
-//  Created by Jeason on 15/7/14.
-//
-//
+
 
 #import "WXApiObject.h"
 

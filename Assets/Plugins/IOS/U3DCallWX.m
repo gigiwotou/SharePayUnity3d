@@ -1,10 +1,4 @@
-//
-//  U3DCallWX.m
-//  SDKSample
-//
-//  Created by ghostheart on 17/8/1.
-//
-//
+
 
 #import "U3DCallWX.h"
 #import "WXApiManager.h"
@@ -24,6 +18,7 @@ void registerApp(char *appid)
     
     [WXApi registerAppSupportContentFlag:typeFlag];
 }
+
 void sendURLToSS(const char *url, const char *title, const char *describe)
 {
     UIImage *thumbImage = [UIImage imageNamed:@"152x152.png"];
@@ -32,7 +27,8 @@ void sendURLToSS(const char *url, const char *title, const char *describe)
                                Title:[NSString stringWithUTF8String:title]
                          Description:[NSString stringWithUTF8String:describe]
                           ThumbImage:thumbImage
-                             InScene:WXSceneSession];}
+                             InScene:WXSceneSession];
+}
 
 void sendAppToSS(NSString *title, NSString *describe)
 {
@@ -50,7 +46,8 @@ void sendAppToSS(NSString *title, NSString *describe)
                              MessageExt:kAppMessageExt
                           MessageAction:kAppMessageAction
                              ThumbImage:thumbImage
-                                InScene:WXSceneSession];}
+                                InScene:WXSceneSession];
+}
 
 
 @end

@@ -1,10 +1,4 @@
-//
-//  UIAlertView+WX.m
-//  SDKSample
-//
-//  Created by liuyunxuan on 2017/2/10.
-//
-//
+
 
 #import "UIAlertView+WX.h"
 #import <objc/runtime.h>

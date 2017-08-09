@@ -1,10 +1,4 @@
-//
-//  SendMessageToWXReq+requestWithTextOrMediaMessage.m
-//  SDKSample
-//
-//  Created by Jeason on 15/7/14.
-//
-//
+
 
 #import "SendMessageToWXReq+requestWithTextOrMediaMessage.h"
 

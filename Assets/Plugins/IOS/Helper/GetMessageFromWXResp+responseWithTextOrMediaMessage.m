@@ -1,10 +1,3 @@
-//
-//  GetMessageFromWXResp+responseWithTextOrMediaMessage.m
-//  SDKSample
-//
-//  Created by Jeason on 15/7/14.
-//
-//
 
 #import "GetMessageFromWXResp+responseWithTextOrMediaMessage.h"
 

@@ -1,10 +1,4 @@
-//
-//  UIAlertView+WX.h
-//  SDKSample
-//
-//  Created by liuyunxuan on 2017/2/10.
-//
-//
+
 
 #import <UIKit/UIKit.h>
 
