@@ -33,4 +33,12 @@ public class SharePay : MonoBehaviour {
         shareSDKUtils.SendURLToWXSceneSession("sohu.com", "ym分享测试", "这是来着地狱的呼唤。");
     }
 
+    public void OnError(string state)
+    {
+        int sharestate = int.Parse(state);
+        if(sharestate == 0)//分享成功
+        {
+            Debug.Log("分享成功");
+        }
+    }
 }
