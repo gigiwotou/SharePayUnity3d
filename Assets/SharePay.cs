@@ -40,5 +40,6 @@ public class SharePay : MonoBehaviour {
         {
             Debug.Log("分享成功");
         }
+        Debug.Log("OnError=" + state);
     }
 }
